@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Katzensitting Lämmler – mobile, liebevolle Tierbetreuung bei dir zuhause im Raum Heidelberg.">
+<title>Katzensitting Lämmler – Mobile Tierbetreuung</title>
+<link rel="icon" href="assets/logo.png">
+<style>
+:root{--green:#9bd34f;--green-dark:#5f9728;--green-soft:#f0f8e3;--ink:#181818;--muted:#687068;--cream:#fbfcf9;--line:#e2e9df;--white:#fff;--coral:#f56f63;--plum:#5a3149;--shadow:0 16px 45px rgba(23,35,20,.10);--radius:24px}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
+a{color:inherit} img{max-width:100%;display:block}
+.nav{position:sticky;top:0;z-index:30;background:rgba(251,252,249,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1160px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800} .brand-mark{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--ink);overflow:hidden} .brand-mark img{width:46px;height:46px;object-fit:cover}
+.brand small{display:block;color:var(--muted);font-weight:600;font-size:11px;letter-spacing:.04em}
+.links{display:flex;gap:18px;align-items:center;font-size:14px;font-weight:700} .links a{text-decoration:none} .links a:hover{color:var(--green-dark)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;background:var(--green);color:#14200d;text-decoration:none;font-weight:800;border:0;cursor:pointer;box-shadow:0 8px 22px rgba(155,211,79,.25)} .btn.dark{background:var(--ink);color:#fff}
+.hero{max-width:1160px;margin:auto;padding:72px 20px 55px;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;position:relative}
+.eyebrow,.pill{display:inline-flex;gap:8px;align-items:center;background:var(--green-soft);color:var(--green-dark);padding:8px 13px;border-radius:999px;font-weight:800;font-size:13px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.02;margin:18px 0;letter-spacing:-.045em} h1 span{color:var(--green-dark)} .lead{font-size:20px;color:var(--muted);max-width:650px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px} .hero-card{position:relative} .hero-card img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:34px;box-shadow:var(--shadow)}
+.stamp{position:absolute;left:-18px;bottom:25px;background:var(--white);border:1px solid var(--line);padding:16px 18px;border-radius:20px;box-shadow:var(--shadow);font-weight:800} .stamp strong{color:var(--green-dark);font-size:23px;display:block}
+section{padding:78px 20px} .wrap{max-width:1160px;margin:auto} .section-head{max-width:760px;margin-bottom:35px} .section-head h2{font-size:clamp(30px,4vw,45px);line-height:1.1;margin:10px 0} .section-head p{color:var(--muted);font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px} .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:25px;box-shadow:0 8px 30px rgba(23,35,20,.05)} .icon{font-size:30px;margin-bottom:8px} .card h3{margin:5px 0 8px} .card p{color:var(--muted);margin:0}
+.about{background:#f0f7ed} .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center} .portrait{border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
+.checklist{display:grid;gap:12px;margin:25px 0} .check{display:flex;gap:11px;align-items:flex-start} .check b{color:var(--green-dark)}
+.notice{background:var(--ink);color:#fff;border-radius:26px;padding:28px;margin-top:25px} .notice strong{color:var(--green)}
+.reviews{background:#fff;position:relative} .review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px} .review-card{margin:0;background:#fff;border:1px solid var(--line);padding:12px;border-radius:22px;box-shadow:0 8px 30px rgba(23,35,20,.05);position:relative;overflow:hidden} .review-card img{width:100%;height:auto;max-height:860px;object-fit:contain;background:#eef1ee;border-radius:15px} .review-card.new-review{border:2px solid var(--green);box-shadow:0 12px 34px rgba(95,151,40,.12)} .new-badge{position:absolute;z-index:2;top:18px;right:18px;background:var(--green);color:#17300c;font-size:12px;font-weight:900;padding:7px 10px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.review-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap} .review-count{font-weight:900;color:var(--plum);background:#fff3f0;border:1px solid #f2d4cf;padding:10px 14px;border-radius:999px}
+.review-form{margin-top:45px;background:var(--green-soft);border:1px solid #dcecc9;border-radius:28px;padding:28px} .review-form h3{margin-top:0;font-size:28px} .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px} label{display:grid;gap:7px;font-weight:750;font-size:14px} input,select,textarea{font:inherit;padding:12px 13px;border:1px solid #cfdcc5;border-radius:14px;background:#fff;color:var(--ink)} textarea{min-height:150px;resize:vertical} .full{grid-column:1/-1} .stars-input{display:flex;gap:7px;flex-direction:row-reverse;justify-content:flex-end} .stars-input input{display:none} .stars-input label{font-size:30px;color:#c7c7c7;cursor:pointer;display:block} .stars-input label:hover,.stars-input label:hover~label,.stars-input input:checked~label{color:#f2b400} .consent{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);font-weight:500} .consent input{margin-top:4px}
+.cat-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px} .cat-gallery figure{margin:0;overflow:hidden;border-radius:22px;background:#eef1ee;border:1px solid var(--line);aspect-ratio:1/1} .cat-gallery img{width:100%;height:100%;object-fit:cover;transition:transform .35s} .cat-gallery figure:hover img{transform:scale(1.04)}
+.availability{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.legal{background:#fff8f6} .legal-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:20px;box-shadow:0 8px 30px rgba(23,35,20,.05)} .agb-pages{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px} .agb-page{background:#f4f4f4;border-radius:18px;padding:10px;border:1px solid #ddd} .agb-page img{width:100%;height:auto;border-radius:12px}
+.contact{background:var(--ink);color:#fff} .contact .section-head p{color:#b9c2b8} .contact-box{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#222722;border:1px solid #343c33;border-radius:28px;padding:25px} .email-placeholder{color:#aeb7ad;font-size:14px}
+.admin{background:#f4f8f0} .admin-box{background:#fff;border:1px solid var(--line);border-radius:24px;padding:25px} .pending{padding:14px;border:1px dashed #b8caa7;border-radius:16px;margin-top:12px;background:#fbfdf9} .pending small{color:var(--muted)} .pending-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+footer{background:#101310;color:#9ca59b;padding:28px 20px} footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
+.decor{position:absolute;pointer-events:none;opacity:.22;font-size:34px} .paw1{right:5%;top:12%} .fish1{left:2%;bottom:8%} .paw2{right:4%;bottom:3%}
+@media(max-width:800px){.links{display:none} .hero{grid-template-columns:1fr;padding-top:42px} .hero-card{max-width:520px;margin:auto} .grid,.availability,.about-grid,.review-grid,.cat-gallery,.agb-pages{grid-template-columns:1fr} .review-grid img{height:auto;max-height:none} .contact-box{align-items:flex-start;flex-direction:column} section{padding:58px 18px} .stamp{left:10px} .form-grid{grid-template-columns:1fr} .full{grid-column:auto} .new-badge{top:14px;right:14px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner">
+<a class="brand" href="#start"><div class="brand-mark"><img src="assets/logo.png" alt="Katzensitting Lämmler Logo"></div><div>Katzensitting Lämmler<small>Mobile Tierbetreuung</small></div></a>
+<div class="links"><a href="#ueber-mich">Über mich</a><a href="#leistungen">Leistungen</a><a href="#bewertungen">Bewertungen</a><a href="#agb">AGB</a><a href="#kontakt">Kontakt</a></div>
+<a class="btn" href="#kontakt">Anfrage senden</a></div></nav>
+<main>
+<section class="hero" id="start"><span class="decor paw1">🐾</span><span class="decor fish1">🐟</span><div>
+<span class="eyebrow">🐱 Liebevolle Betreuung bei dir zuhause</span><h1>Katzensitting<br><span>Lämmler</span></h1>
+<p class="lead">Mobile Tierbetreuung mit Herz – persönlich, zuverlässig und mit viel Liebe zu Katzen.</p>
+<div class="hero-actions"><a class="btn" href="#kontakt">✉ Anfrage per E-Mail</a><a class="btn dark" href="#leistungen">Leistungen ansehen</a></div>
+<p style="margin-top:18px;color:var(--muted);font-size:14px">Buchungen erfolgen weiterhin persönlich und außerhalb der Website.</p></div>
+<div class="hero-card"><img src="assets/portrait.jpg" alt="Marisa – Katzensitting Lämmler"><div class="stamp"><strong>🐾 Mit Herz</strong>für deine Katze</div></div></section>
+
+<section id="leistungen"><div class="wrap"><div class="section-head"><span class="pill">Meine Betreuung</span><h2>Damit deine Katze sich zuhause wohlfühlt.</h2><p>Die Betreuung findet in der gewohnten Umgebung deiner Katze statt. So bleibt ihr Alltag möglichst entspannt.</p></div>
+<div class="grid"><article class="card"><div class="icon">🥣</div><h3>Füttern & Wasser</h3><p>Futter bereitstellen, Näpfe sauber halten und frisches Wasser auffüllen.</p></article><article class="card"><div class="icon">🧹</div><h3>Katzenklo</h3><p>Das Katzenklo wird zuverlässig gereinigt und die Umgebung ordentlich hinterlassen.</p></article><article class="card"><div class="icon">💚</div><h3>Liebe & Beschäftigung</h3><p>Spielen, kuscheln und Zeit miteinander verbringen – natürlich passend zum Charakter deiner Katze.</p></article><article class="card"><div class="icon">💊</div><h3>Medikamente</h3><p>Nach vorheriger Absprache ist auch die Medikamentengabe möglich, sofern die Katze dies zulässt.</p></article><article class="card"><div class="icon">🪮</div><h3>Bürsten & Pflege</h3><p>Wenn gewünscht und von deiner Katze akzeptiert, gehört auch eine kleine Pflegeeinheit dazu.</p></article><article class="card"><div class="icon">📸</div><h3>Updates</h3><p>Auf Wunsch kannst du während deiner Abwesenheit Fotos und kurze Updates bekommen.</p></article></div>
+<div class="notice"><strong>Preise auf Anfrage</strong><br>Der Preis richtet sich nach Betreuungsumfang, Entfernung und Zeitraum. Zu Saisonzeiten wie Feiertagen, August, Weihnachten und Neujahr kann ein Aufpreis anfallen.</div></div></section>
+
+<section class="about" id="ueber-mich"><span class="decor fish1">🐟</span><div class="wrap about-grid"><div class="portrait"><img src="assets/portrait.jpg" alt="Marisa"></div><div>
+<span class="pill">Über mich</span><h2>Hallo, ich bin Marisa. 🐾</h2>
+<p>Ich bin mit Tieren groß geworden und sie gehören für mich schon immer ganz selbstverständlich zum Leben dazu. Mein Hund hat mein Leben auf ganz besondere Weise bereichert und mir gezeigt, wie tief die Verbindung zwischen Mensch und Tier sein kann. Heute bereichern meine Katzen mein Leben – und für mich sind sie genauso Familienmitglieder.</p>
+<p>Genau deshalb weiß ich, wie wichtig es ist, seine Tiere in guten Händen zu wissen. Für viele Menschen sind ihre Tiere ein vollwertiger Teil der Familie, manchmal sogar ein Kinderersatz. Wenn man sie während eines Urlaubs oder einer anderen Abwesenheit jemandem anvertraut, möchte man sicher sein, dass sie liebevoll, zuverlässig und mit genauso viel Aufmerksamkeit versorgt werden, wie man es selbst tun würde.</p>
+<p>Ich möchte dir dieses gute Gefühl geben. Deine Katze soll nicht einfach nur versorgt werden – sie soll sich sicher, gesehen und wohl fühlen. Ich nehme mir Zeit, gehe auf ihren Charakter und ihre Bedürfnisse ein und behandle jedes Tier mit derselben Fürsorge, die ich mir auch für meine eigenen Tiere wünsche.</p>
+<div class="checklist"><div class="check">🐾 <span><b>Herzlich:</b> Tiere sind für mich Familienmitglieder und werden auch so behandelt.</span></div><div class="check">🐾 <span><b>Persönlich:</b> Ich nehme mir Zeit und richte mich nach den Bedürfnissen deiner Katze.</span></div><div class="check">🐾 <span><b>Zuverlässig:</b> Absprachen, Versorgung und Updates sind mir besonders wichtig.</span></div><div class="check">🐾 <span><b>Mobil:</b> Ich komme zur Betreuung zu dir nach Hause.</span></div></div>
+<p><b>Mein Grundsatz:</b> Wenn du mir deine Tiere anvertraust, sollst du entspannt wegfahren können und wissen: Sie sind gut aufgehoben.</p>
+</div></div></section>
+
+<section id="bewertungen" class="reviews"><span class="decor paw2">🐾</span><div class="wrap"><div class="review-intro"><div class="section-head"><span class="pill">Bewertungen</span><h2>Das sagen meine Kunden. 🐾</h2><p>Alle bisherigen Bewertungen bleiben zusammen an einem Ort. Die älteren Rückmeldungen zeigen die Erfahrungen aus meiner bisherigen Tätigkeit; die neueren sind mit einem dezenten Akzent in den Farben meines Logos hervorgehoben.</p></div><div class="review-count">43 Bewertungen</div></div>
+<div class="review-grid">          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-01.jpg" alt="Kundenbewertung 1" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-02.jpg" alt="Kundenbewertung 2" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-03.jpg" alt="Kundenbewertung 3" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-04.jpg" alt="Kundenbewertung 4" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-05.jpg" alt="Kundenbewertung 5" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-06.jpg" alt="Kundenbewertung 6" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-07.jpg" alt="Kundenbewertung 7" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-08.jpg" alt="Kundenbewertung 8" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-09.jpg" alt="Kundenbewertung 9" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-10.jpg" alt="Kundenbewertung 10" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-11.jpg" alt="Kundenbewertung 11" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-12.jpg" alt="Kundenbewertung 12" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-13.jpg" alt="Kundenbewertung 13" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-14.jpg" alt="Kundenbewertung 14" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-15.jpg" alt="Kundenbewertung 15" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-16.jpg" alt="Kundenbewertung 16" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-17.jpg" alt="Kundenbewertung 17" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-18.jpg" alt="Kundenbewertung 18" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-19.jpg" alt="Kundenbewertung 19" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-20.jpg" alt="Kundenbewertung 20" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-21.jpg" alt="Kundenbewertung 21" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-22.jpg" alt="Kundenbewertung 22" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-23.jpg" alt="Kundenbewertung 23" loading="lazy">
+          </figure>
+          <figure class="review-card ">
+            
+            <img src="assets/reviews/review-24.jpg" alt="Kundenbewertung 24" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-25.jpg" alt="Kundenbewertung 25" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-26.jpg" alt="Kundenbewertung 26" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-27.jpg" alt="Kundenbewertung 27" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-28.jpg" alt="Kundenbewertung 28" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-29.jpg" alt="Kundenbewertung 29" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-30.jpg" alt="Kundenbewertung 30" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-31.jpg" alt="Kundenbewertung 31" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-32.jpg" alt="Kundenbewertung 32" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-33.jpg" alt="Kundenbewertung 33" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-34.jpg" alt="Kundenbewertung 34" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-35.jpg" alt="Kundenbewertung 35" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-36.jpg" alt="Kundenbewertung 36" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-37.jpg" alt="Kundenbewertung 37" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-38.jpg" alt="Kundenbewertung 38" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-39.jpg" alt="Kundenbewertung 39" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-40.jpg" alt="Kundenbewertung 40" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-41.jpg" alt="Kundenbewertung 41" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-42.jpg" alt="Kundenbewertung 42" loading="lazy">
+          </figure>
+          <figure class="review-card new-review">
+            <div class="new-badge">Neuere Bewertung</div>
+            <img src="assets/reviews/review-43.jpg" alt="Kundenbewertung 43" loading="lazy">
+          </figure>
+</div>
+<div class="review-form"><h3>Du möchtest eine Bewertung schreiben?</h3><p>Schreib mir deine Erfahrung. Deine Bewertung wird <b>nicht automatisch veröffentlicht</b>. Sie landet zunächst bei mir zur Prüfung und wird erst nach meiner Freigabe auf der Website sichtbar.</p>
+<form id="reviewForm"><div class="form-grid"><label>Name<input id="rName" required maxlength="80" placeholder="Dein Name"></label><label>Ort (optional)<input id="rCity" maxlength="80" placeholder="z. B. Heidelberg"></label><div class="full"><label>Deine Bewertung</label><div class="stars-input" aria-label="Sternebewertung"><input type="radio" id="s5" name="stars" value="5" checked><label for="s5">★</label><input type="radio" id="s4" name="stars" value="4"><label for="s4">★</label><input type="radio" id="s3" name="stars" value="3"><label for="s3">★</label><input type="radio" id="s2" name="stars" value="2"><label for="s2">★</label><input type="radio" id="s1" name="stars" value="1"><label for="s1">★</label></div></div><label class="full">Text<textarea id="rText" required maxlength="1200" placeholder="Wie war die Betreuung deiner Katze?"></textarea></label><label class="consent full"><input type="checkbox" id="rConsent" required><span>Ich bin damit einverstanden, dass meine Bewertung nach meiner Freigabe auf der Website veröffentlicht wird.</span></label><div class="full"><button class="btn" type="submit">🐾 Bewertung zur Prüfung senden</button><span id="reviewStatus" style="margin-left:12px;color:var(--muted);font-size:14px"></span></div></div></form></div>
+</div></section>
+
+<section id="meine-katzen"><div class="wrap"><div class="section-head"><span class="pill">Persönlich 🐾</span><h2>Ein kleiner Einblick in mein Katzenleben.</h2><p>Meine eigenen Katzen gehören natürlich zu meinem Alltag – und genau diese Liebe und Begeisterung für Katzen möchte ich auch in meine Betreuung einbringen.</p></div><div class="cat-gallery"><figure><img src="assets/katze-01.jpg" alt="Katze" loading="lazy"></figure><figure><img src="assets/katze-02.jpg" alt="Katze" loading="lazy"></figure><figure><img src="assets/katze-03.jpg" alt="Katze" loading="lazy"></figure><figure><img src="assets/katze-04.jpg" alt="Katze" loading="lazy"></figure><figure><img src="assets/katze-05.jpg" alt="Katze" loading="lazy"></figure><figure><img src="assets/katze-06.jpg" alt="Katze" loading="lazy"></figure><figure><img src="assets/katze-07.jpg" alt="Katze" loading="lazy"></figure><figure><img src="assets/katze-08.jpg" alt="Katze" loading="lazy"></figure><figure><img src="assets/katze-09.jpg" alt="Katze" loading="lazy"></figure></div></div></section>
+
+<section id="verfuegbarkeit"><div class="wrap"><div class="section-head"><span class="pill">Verfügbarkeit</span><h2>Bitte frühzeitig anfragen.</h2><p>Kurzfristige Buchungen können aufgrund hoher Nachfrage oder privater Planung nicht immer angenommen werden. Auch eine Vertretung benötigt rechtzeitige Planung.</p></div><div class="availability"><div class="card"><h3>📅 Urlaubszeiten</h3><p>Aktuelle Urlaubszeiten können hier regelmäßig ergänzt werden.</p></div><div class="card"><h3>🌿 Saisonzeiten</h3><p>Für Feiertage sowie August, Weihnachten und Neujahr kann ein Aufpreis anfallen.</p></div></div></div></section>
+
+<section class="legal" id="agb"><div class="wrap"><div class="section-head"><span class="pill">Wichtige Informationen</span><h2>AGB</h2><p>Die AGB werden hier ausschließlich übersichtlich dargestellt. Der Inhalt wurde nicht verändert.</p></div><div class="legal-card"><h3>Allgemeine Geschäftsbedingungen</h3><p><b>Für Katzensitting Lämmler – Mobile Tierbetreuung</b><br>Stand: 01.01.2025</p><div class="agb-pages"><div class="agb-page"><img src="assets/agb-seite-1.png" alt="AGB Seite 1"></div><div class="agb-page"><img src="assets/agb-seite-2.png" alt="AGB Seite 2"></div></div></div></div></section>
+
+<section class="admin" id="freigabe"><div class="wrap"><div class="section-head"><span class="pill">Interner Bereich</span><h2>Bewertungen prüfen & freigeben</h2><p>Dieser Bereich ist für die Freigabe neuer Bewertungen vorgesehen. In dieser statischen Website werden Entwürfe im Browser gespeichert. Für einen echten Mehrgeräte-Betrieb kann später eine kleine Datenbank/Formular-Anbindung ergänzt werden.</p></div><div class="admin-box"><div id="pendingList"><p style="color:var(--muted)">Noch keine ausstehenden Bewertungen auf diesem Gerät.</p></div></div></div></section>
+
+<section class="contact" id="kontakt"><div class="wrap"><div class="section-head"><span class="pill">Kontakt</span><h2>Du möchtest deine Katze betreuen lassen?</h2><p>Schreib mir gerne eine E-Mail mit Zeitraum, Ort und ein paar Infos zu deiner Katze. Die eigentliche Buchung und Abrechnung läuft anschließend wie gewohnt persönlich – nicht über diese Website.</p></div><div class="contact-box"><div><div style="font-size:22px;font-weight:800">✉ E-Mail</div><div class="email-placeholder">[DEINE E-MAIL-ADRESSE HIER EINTRAGEN]</div></div><a class="btn" href="mailto:DEINE-EMAIL@BEISPIEL.DE?subject=Anfrage%20Katzensitting%20L%C3%A4mmler">Anfrage senden</a></div></div></section>
+</main>
+<footer><div class="wrap"><div>© Katzensitting Lämmler – Mobile Tierbetreuung</div><div><a href="#agb">AGB</a> · <a href="#freigabe">Bewertungen freigeben</a></div></div></footer>
+<script>
+const KEY='laemmler_pending_reviews_v1';
+const getPending=()=>JSON.parse(localStorage.getItem(KEY)||'[]');
+const savePending=(x)=>localStorage.setItem(KEY,JSON.stringify(x));
+function renderPending(){{
+ const box=document.getElementById('pendingList'); const arr=getPending();
+ if(!arr.length){{box.innerHTML='<p style="color:var(--muted)">Noch keine ausstehenden Bewertungen auf diesem Gerät.</p>';return;}}
+ box.innerHTML=arr.map((r,i)=>`<div class="pending"><b>${{r.name}}</b>${{r.city?` · ${{r.city}}`:''}}<div>${{'★'.repeat(r.stars)}}${{'☆'.repeat(5-r.stars)}}</div><p>${{r.text}}</p><small>${{r.created}}</small><div class="pending-actions"><button class="btn" onclick="approveReview(${{i}})">✓ Freigeben</button><button class="btn dark" onclick="removeReview(${{i}})">✕ Ablehnen</button></div></div>`).join('');
+}}
+window.approveReview=(i)=>{{const arr=getPending();arr.splice(i,1);savePending(arr);renderPending();alert('Bewertung freigegeben. Für eine dauerhafte öffentliche Veröffentlichung auf allen Geräten wird eine Server-Anbindung benötigt.');}};
+window.removeReview=(i)=>{{const arr=getPending();arr.splice(i,1);savePending(arr);renderPending();}};
+document.getElementById('reviewForm').addEventListener('submit',e=>{{e.preventDefault();const r={{name:document.getElementById('rName').value.trim(),city:document.getElementById('rCity').value.trim(),stars:Number(document.querySelector('input[name=stars]:checked').value),text:document.getElementById('rText').value.trim(),created:new Date().toLocaleString('de-DE')}};const arr=getPending();arr.unshift(r);savePending(arr);e.target.reset();document.getElementById('s5').checked=true;document.getElementById('reviewStatus').textContent='Danke! Deine Bewertung wurde zur Prüfung vorgemerkt.';renderPending();}});
+renderPending();
+</script>
+</body></html>
